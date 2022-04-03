@@ -1,0 +1,79 @@
+#turabit assignment
+
+#pattern creation
+
+rows=6
+for i in range(0,rows):
+    for j in range(rows-1,i,-1):
+        print(j,end='')
+    for k in range(i):
+        print("",end='')
+    for l in range(i+1,rows):
+        print(l,"",end='')
+    print('\n')
+
+#second question answer
+def add(x,y):
+    return x+y
+x=[3,4,5,6]    #'turabit'
+y=[23,7,8,7]   #'solution
+print(add(x,y))
+
+
+#third question answer
+list1=[2,5,8,4]          
+list2.append(list1)        
+print(list2)
+i=0
+while i<len(list1):
+    list1.pop()
+print(list1)
+  
+  OR
+
+list1=[2,5,8,4]
+list2=[]
+list2.append(list1.pop())
+list2.append(list1.pop())
+list2.append(list1.pop())
+list2.append(list1.pop())
+
+print(list1)
+print(list2[::-1])
+
+
+#fourth question answer
+list1=['company','technoloies','location']
+list2=['turabit','python','ahemnebad']
+c={}
+for i in range(len(list1)):
+    c[list1[i]]=list2[i]
+print(c)
+
+
+#fifth question answer
+
+string='''Python is an interpreted high-level general-purpose programming language. Python's design
+philosophy emphasizes code readability with its notable use of significant indentation. Its
+language constructs as well as its object-oriented approach aim to help programmers write
+clear, logical code for small and large-scale projects.'''
+words=0
+char=0
+spaces=0
+lines=1
+
+for i in string:
+    char=char+1
+
+    if (i==" "):
+        spaces=spaces+1
+print('space in string is:',spaces)
+print('character in the string is:',char)
+words=spaces+1
+for lines in string:
+    lines=lines.count('\n')
+    lines=lines+1
+
+print('words in the string is:',words)
+print('number of lines is:',lines)
+
