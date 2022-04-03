@@ -77,3 +77,4 @@ for lines in string:
 print('words in the string is:',words)
 print('number of lines is:',lines)
 
+hi this is amol kumbhare
